@@ -72,10 +72,10 @@ def api_roast():
         {"role": "system", "content": system_prompt}
     ]
 
-    model_to_use = "mistralai/mistral-7b-instruct"
+    model_to_use = "thinkingmachines/inkling:free"
 
     if image_file:
-        model_to_use = "meta-llama/llama-3.2–11b-vision-instruct:free"
+        model_to_use = "thinkingmachines/inkling:free"
         try:
             # Read image as bytes
             image_bytes = image_file.read()
