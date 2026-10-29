@@ -145,7 +145,7 @@ def api_toxic_compliment():
 
     try:
         completion = client.chat.completions.create(
-            model="deepseek/deepseek-r1",
+            model="thinkingmachines/inkling:free",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_input}
@@ -189,7 +189,7 @@ def api_apology():
 
     try:
         completion = client.chat.completions.create(
-            model="deepseek/deepseek-r1",
+            model="thinkingmachines/inkling:free",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_input}
@@ -233,7 +233,7 @@ def api_ai_flirt():
 
     try:
         completion = client.chat.completions.create(
-            model="deepseek/deepseek-r1",
+            model="thinkingmachines/inkling:free",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_input}
